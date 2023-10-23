@@ -2,20 +2,40 @@
 <html>
 <head>
   <style>
-   
+    body {
+      font-family: Arial, sans-serif;
+    }
     .registration-container {
-      width: 400px;
+      width: 300px;
       margin: 50px auto;
       padding: 20px;
-      background-color: rgb(202, 234, 223);
+      background-color: #7bc0b5;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-    footer {
+    .registration-container h2 {
       text-align: center;
-      font-size: 12px;
-      margin-top: 20px;
     }
+    .registration-container input {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .registration-container button {
+      width: 90%;
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .center-container {
+      text-align: center;
+    }
+
   </style>
 </head>
 <body>
@@ -43,31 +63,34 @@
 
    
    
+<div class="center-container">
+  <a href="./index.html"> Home</a>&nbsp;&nbsp;
+  <a href="./About Us.html"> About Us </a> &nbsp;&nbsp;
+  <a href="https://advancedassessments.co.za/"> Study with us </a> &nbsp;&nbsp;
 
-    <a href="./index.html"> Home</a>&nbsp;&nbsp;
-    <a href="./About Us.html"> About Us </a> &nbsp;&nbsp;
-    <a href="https://advancedassessments.co.za/"> Study with us </a> &nbsp;&nbsp;
- 
+  </div>
+    
 </h3>
 
 
   <body style= "background-position:100% 100% 100%;"  background-repeat: no-repeat; "background-size: cover;"  background="./images/landscape.jpeg"></body>
+  
   <div class="registration-container">
-    <h1>Registration Form</h1>
-    <form>
+             <h2>Registration</h2>
+    <form action="register.php" method="POST">
       <label for="name">Name:</label>
-      <input type="text" id="name" name="name"><br><br>
+      <input type="text" id="name" name="name" required><br>
       <label for="surname">Surname:</label>
-      <input type="text" id="surname" name="surname"><br><br>
+      <input type="text" id="surname" name="surname" required><br>
       <label for="username">Username:</label>
-      <input type="text" id="username" name="username"><br><br>
+      <input type="text" id="username" name="username" required><br>
       <label for="email">Email Address:</label>
-      <input type="email" id="email" name="email"><br><br>
+      <input type="email" id="email" name="email" required><br>
       <label for="phone">Phone Number:</label>
-      <input type="tel" id="phone" name="phone"><br><br>
+      <input type="tel" id="phone" name="phone" required><br>
       <label for="dob">Date of Birth:</label>
-      <input type="date" id="dob" name="dob"><br><br>
-      <input type="submit" value="Register">
+      <input type="date" id="dob" name="dob" required><br>
+      <button type="submit">Register</button>
     </form>
   </div>
 
